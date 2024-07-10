@@ -1,4 +1,4 @@
-module introduccion::practica_aptos {
+module practica::practica_aptos {
     use std::debug::print;
     use std::string::utf8;
 
@@ -6,9 +6,14 @@ module introduccion::practica_aptos {
 
     fun practica() {
         let a =1;
-        print (&a);
+        let b = 8;
+        let c = a + b;
+        let name = b"Juan";
+        print(&a);
         print(&CONSTANTE);
         print(&utf8(b"Hello, World!"));
+        print(&c);
+        print(&utf8(name));
        
     }
 
